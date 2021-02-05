@@ -3,13 +3,13 @@
     {{#each artistList}}
     <div class="card col">
         <div class="cardtop">
-            <img class="artistImage" src="{{this.images.[0].url}}" alt="{{this.name}}"> 
+            <img class="artistImage" src="{{this.images.[0].url}}" alt="{{this.name}}" onerror="this.onerror=null;this.src='/images/spotify-background.jpeg';"> 
         </div>
         <div class="cardbottom">
             {{this.name}}
         </div>
         <div>
-          <a href="/albums/{{this.id}}"><span>View Albums</span></a>
+          <a href="/albums/{{this.name}}/{{this.id}}"><span>View Albums</span></a>
         </div>
     </div>
     {{/each}}
