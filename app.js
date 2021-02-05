@@ -53,7 +53,7 @@ app.get('/tracks/:albumId', (req, res, next) => {
   .getAlbumTracks(req.params.albumId)
   .then(data => {
     //Make sure you show the name and the cover of each album and add a button/link to see the tracks (next iteration).
-    console.log('Artist tracks', data.body.items);
+    //console.log('Artist tracks', data.body.items);
     res.render('tracks', { trackList: data.body.items })
   }).catch(err => console.log('The error while getting album tracks: ', err));
 });
