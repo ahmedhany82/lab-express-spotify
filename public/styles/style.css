@@ -8,18 +8,79 @@ body {
     min-height: 100%;
 }
 
-.mainPage img {
-    z-index: 0;
+.bg {
+    background-image: url("/images/spotify-background.jpeg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, .5);
+    width: 500px;
+    height: 250px;
 }
 
-.mainPage form {
-    /* position: absolute;
-    top: 50px;
-    left: 50px; */
-    z-index: 1;
+.form input {
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.form button {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
 }
 
 .artistImage {
     width: 250px;
     height: 300px;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: 1px solid #bfbfbf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 20px;
+}
+
+.track {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trackPageTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
 }

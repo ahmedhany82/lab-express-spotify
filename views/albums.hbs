@@ -1,12 +1,15 @@
 <div class="container">
+  <h1 class="display-6 text-center">Albums for: </h1>
   <div class="row align-items-start row-cols-3 ms-auto">
     {{#each albumsList}}
-    <div class="col">
-        <div>
+    <div class="card col">
+        <div class="cardtop">
             <img class="artistImage" src="{{this.images.[0].url}}" alt="{{this.name}}"> 
         </div>
-        <div>
+        <div class="cardbottom">
             {{this.name}}
+        </div>
+        <div>
             <a href="/tracks/{{this.id}}"><span>View Tracks</span></a>
         </div>
     </div>
