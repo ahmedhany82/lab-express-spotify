@@ -3,6 +3,7 @@
     {{#each artistList}}
     <div class="card col">
         <div class="cardtop">
+            {{!-- Use default Spotify background image when image is broken --}}
             <img class="artistImage" src="{{this.images.[0].url}}" alt="{{this.name}}" onerror="this.onerror=null;this.src='/images/spotify-background.jpeg';"> 
         </div>
         <div class="cardbottom">
