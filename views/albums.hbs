@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row align-items-start row-cols-3 ms-auto">
-    {{#each artistList}}
+    {{#each albumsList}}
     <div class="col">
         <div>
             <img class="artistImage" src="{{this.images.[0].url}}" alt="{{this.name}}"> 
         </div>
         <div>
             {{this.name}}
-            <a href="/albums/{{this.id}}"><span>View Albums</span></a>
+            <a href="/tracks/{{this.id}}"><span>View Tracks</span></a>
         </div>
     </div>
     {{/each}}

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row align-items-start row-cols-3 ms-auto">
+    {{#each trackList}}
+    <div class="col">
+        <div>
+            <div>
+                {{this.name}}
+            </div>
+            <div>
+                <audio controls>
+                <source src="{{this.preview_url}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
